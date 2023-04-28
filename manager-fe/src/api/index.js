@@ -8,5 +8,12 @@ export default {
             method:'post',
             data:params,
         })
+    },
+    getMenuList(params){
+        return request({
+            url:'menu/list',
+            method:'get',
+            data:params
+        })
     }
 }

@@ -2,6 +2,14 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // import Home from '@/components/Home.vue'
 
 const routes = [
+    //重定向,在项目跑起来的时候，访问/，立刻访问到首页
+    // {
+    //     path:'/',
+    //     redirect:"/login",
+    //     meta:{
+    //         title:'登录页'
+    //     }
+    // },
     {
         name: 'home',
         path: '/',
@@ -9,7 +17,7 @@ const routes = [
             title: '首页'
         },
         component:  () => import('../components/Home.vue'),
-        redirect: '/welcome',
+        redirect:'/login',
         children: [
             {
                 name: 'welcome',
