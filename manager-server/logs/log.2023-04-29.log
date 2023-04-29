@@ -1,0 +1,48 @@
+[2023-04-29T17:58:40.581] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'split')
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:43:49
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:45:18)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:34:9
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-04-29T18:00:02.723] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'split')
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:43:51
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:45:18)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:34:9
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-bodyparser\index.js:91:5)
+[2023-04-29T18:49:44.950] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'split')
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:58:51
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:45:18)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:44:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\app.js:36:9
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-static\index.js:53:15)
+    at async logger (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (D:\Users\XGJ\Desktop\poject\后台管理系统\manager-server\node_modules\koa-bodyparser\index.js:91:5)

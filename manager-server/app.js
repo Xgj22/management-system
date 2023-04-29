@@ -8,6 +8,9 @@ const logger = require('koa-logger')
 const log4js = require('./utils/log4j')
 const users = require('./routes/users')
 const router = require('koa-router')()
+const jwt = require('jsonwebtoken')
+const koajwt = require('koa-jwt')
+const util = require('./utils/util')
 
 // error handler
 onerror(app)
@@ -29,14 +32,27 @@ app.use(views(__dirname + '/views', {
 
 // logger
 app.use(async (ctx, next) => {
-  const start = new Date()
-  await next()
-  const ms = new Date() - start
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
+  log4js.info(`get params:${JSON.stringify(ctx.request.query)}`)
+  log4js.info(`post params:${JSON.stringify(ctx.request.body)}`)
+  await next().catch((err) => {
+    if (err.status == '401') {
+      ctx.status = 200;
+      ctx.body = util.fail('Token认证失败', util.CODE.AUTH_ERROR)
+    } else {
+      throw err;
+    }
+  })
 })
+
+// 验证 token 的中间件
+
+app.use(koajwt({secret:'xgj'}).unless({
+  path:[/^\/api\/users\/login/]
+}))
 
 // routes
 router.prefix('/api')
+
 
 router.use(users.routes(),users.allowedMethods())
 app.use(router.routes(),router.allowedMethods())
