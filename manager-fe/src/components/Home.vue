@@ -72,10 +72,8 @@ export default {
     methods:{
         async loadMenuList(){
             try {
-                console.log(this.$store.state)
                 const res = await this.$api.getMenuList()
                 this.userMenu = res
-                console.log(res)
             } catch (error) {
                 console.log(error)
             }

@@ -19,7 +19,7 @@ const EnvConfig = {
 }
 export default {
     env,
-    mock:true,//开启关闭mock接口
+    mock:false,//开启关闭mock接口
     namespace:'manager',
     ...EnvConfig[env]
 }

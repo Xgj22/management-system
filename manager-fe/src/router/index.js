@@ -26,6 +26,14 @@ const routes = [
                     title: '欢迎体验Vue3全栈课程'
                 },
                 component: () => import('../views/Welcome/index.vue')
+            },
+            {
+                name: 'user',
+                path: '/user',
+                meta: {
+                    title: '用户管理'
+                },
+                component: () => import('../views/User/index.vue')
             }
         ]
     },
